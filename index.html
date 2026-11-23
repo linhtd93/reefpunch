@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reefpunch</title>
+<style>
+  :root { --bg:#f6fbfd; --fg:#12303f; --muted:#4a6b7c; --card:#fff; --line:#d6e6ee; --accent:#0a6ea0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#081a24; --fg:#e4f2f8; --muted:#9fc0cf; --card:#0e2534; --line:#1d4256; --accent:#62c9ea; }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  header { background:linear-gradient(170deg,#48d6e6,#0a468c); color:#fff; padding:64px 16px 56px; text-align:center; }
+  header h1 { margin:0 0 8px; font-size:38px; letter-spacing:1px; }
+  header p { margin:0; opacity:.9; }
+  main { max-width:760px; margin:-28px auto 64px; padding:0 16px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:26px; }
+  h2 { font-size:18px; color:var(--accent); margin:0 0 12px; }
+  .game { display:flex; gap:14px; align-items:baseline; padding:14px 0; border-top:1px solid var(--line); }
+  .game:first-of-type { border-top:0; }
+  .game b { font-size:17px; }
+  .muted { color:var(--muted); font-size:14px; }
+  a { color:var(--accent); }
+  footer { text-align:center; padding:0 16px 48px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Reefpunch</h1>
+  <p>Small games for Android</p>
+</header>
+<main>
+  <div class="card">
+    <h2>Games</h2>
+    <div class="game">
+      <b>Fishmorph</b>
+      <span class="muted">You are what you eat. &middot;
+        <a href="fishmorph/privacy/">Privacy policy</a></span>
+    </div>
+  </div>
+</main>
+<footer class="muted">&copy; 2026 Reefpunch</footer>
+</body>
+</html>
